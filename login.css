@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+/* header */
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header{
+    width: 1140px;
+    max-width: 90%;
+    margin: auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+header .back .create-account{
+    color: white;
+}
+
+header .create-account{
+    margin-left: 30px;
+}
+
+/* container */
+
+.container{
+    /* margin-top: 60px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .page-name{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.page-name h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.page-name p{
+    font-size: 18px;
+    width: 800px;
+    line-height: 22px;
+    /* color: #4c302d; */
+    color: #444;
+}
+
+.container .sign-in{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.sign-in .fillup,
+.seperator,
+.social-signin{
+    display: flex;
+    flex-direction: column;
+}
+
+.sign-in{
+    width: 600px;
+    justify-content: space-between;
+}
+
+.fillup, .social-signin {
+    width: 250px;
+}
+
+.fillup .form{
+    position: relative;
+}
+
+.fillup .form input{
+    width: 96%;
+    height: 40px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin: 5px 5px;
+    background-color: none;
+    outline: none;
+    transition: all 160ms ease-in;
+    padding-left: 10px;
+}
+
+.form-input:hover{
+    border-color: #444;
+}
+
+.form-input:focus{
+    border-color: #444;
+}
+
+.form-label{
+    position: absolute;
+    left: 1rem;
+    top: 0.8rem;
+    padding: 0 0.5rem;
+    color: #fff;
+    cursor: text;
+    transition: top 200ms ease-in,
+    left 200ms ease-in,
+    font-size 200ms ease-in;
+    background-color: none;
+    font-size: 15px;
+}
+
+.form-input:focus ~ .form-label{
+    top: -0.5rem;
+    font-size: 0.8rem;
+    left: 0.8rem;
+}
+
+.fillup .form i{
+    position: absolute;
+    z-index: 2;
+    background: none;
+    right: 19px;
+    top: 30%;
+}
+
+/* .fillup button{
+    width: 100%;
+    height: 40px;
+    background-color: #ff7d59;
+    background-image: linear-gradient(319deg, #ff7d59 0%, #ff583a 37%, #f4a698 100%);
+    border: 1px;
+    border-radius: 4px;
+    margin: 5px 5px;
+    color: #fff;
+    text-align: left;
+    padding-left: 20px ;
+    font-size: 15px;
+} */
+
+.fillup button{
+    width: 100%;
+    height: 40px;
+    /* background-color: #ff7d59;  */
+    /* background-image: linear-gradient(319deg, #ff7d59 0%, #ff583a 37%, #f4a698 100%);  */
+    background-image: linear-gradient(320deg,#1a1a1a 0%, #6b6b6b 90%);
+    border: 1px;
+    transition: background-image 0.5s ease;
+    border-radius: 4px;
+    margin: 5px 5px;
+    color: #fff;
+    text-align: left;
+    padding-left: 20px ;
+    font-size: 15px;
+}
+
+.fillup button i{
+    background: none;
+    margin-left:  25px;
+}
+
+.fillup button:hover {
+    font-weight: 600;
+    cursor: pointer;
+    background-color: #8c8c8c;
+    background-image: linear-gradient(320deg,#1a1a1a 0%,#bdbdbd 10%, #6b6b6b 90%);
+}
+
+.btn{
+    width: 100%;
+    height: 40px;
+    background: none;
+    border: 1px solid #444;
+    border-radius: 5px;
+    margin: 5px 5px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s linear;
+    color: #fff;
+    overflow: hidden;
+    text-align: left;
+    
+}
+
+.btn i{
+   margin-left: 15px;
+   margin-right: 10px;
+   background: none;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color:#2e2c2c;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all 0.3s linear;
+}
+
+.btn:hover:before{
+    transform: translateX(0);
+    z-index: -1;
+}
+
+.btn:hover{
+    color: white;
+    z-index: 1;
+    font-weight: 600;
+}
+
+.seperator{
+    margin-top: 55px;
+    color: #444;
+    font-size: 30px;
+}
+
+.forgot-password a{
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.forgot-password a:hover{
+    color: #8b0000;
+}
+
+.forgot-password a:active {
+    color: #444;
+}
